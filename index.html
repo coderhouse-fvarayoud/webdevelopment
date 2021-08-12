@@ -4,16 +4,25 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Home</title>
   </head>
 
   <body>
     <header>
-      <ul>
-        <li><a href="index.html"> Home </a></li>
-        <li><a href="features.html"> Features </a></li>
-        <li><a href="app.html"> App </a></li>
-        <li><a href="contacto.html"> Contacto </a></li>
+      <ul class="header">
+        <li class="headerItem">
+          <a class="headerLink" href="index.html"> Home </a>
+        </li>
+        <li class="headerItem">
+          <a class="headerLink" href="features.html"> Features </a>
+        </li>
+        <li class="headerItem">
+          <a class="headerLink" href="app.html"> App </a>
+        </li>
+        <li class="headerItem">
+          <a class="headerLink" href="contact.html"> Contacto </a>
+        </li>
       </ul>
     </header>
     <section>
@@ -30,8 +39,8 @@
     </section>
     <section>
       <h2>Planes</h2>
-      <table cellspacing="0px" cellpadding="15px" border="1px">
-        <tr>
+      <table>
+        <tr class="topRow">
           <td>Nombre del Plan</td>
           <td>Precio</td>
           <td>Caracteristicas</td>
@@ -84,7 +93,12 @@
         <br />
         <label for="nacionalidad">Tu nacionalidad: </label>
         <br />
-        <input type="radio" name="nacionalidad" value="arg" />Argentino
+        <input
+          type="radio"
+          name="nacionalidad"
+          value="arg"
+          class="inputOption"
+        />Argentino
         <br />
         <input type="radio" name="nacionalidad" value="otra" />Otra
         <br />
@@ -104,6 +118,6 @@
         <input type="submit" value="Enviar" />
       </form>
     </section>
-    <footer>Footer</footer>
+    <footer class="footer">Footer</footer>
   </body>
 </html>
