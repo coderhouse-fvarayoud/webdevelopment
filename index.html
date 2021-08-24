@@ -4,87 +4,176 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
     <title>Home</title>
   </head>
 
   <body>
     <header>
-      <ul class="header">
+      <ul class="headerList">
         <li class="headerItem">
-          <a class="headerLink" href="index.html"> Home </a>
+          <a class="headerLink" href="index.html"> Inicio </a>
         </li>
         <li class="headerItem">
-          <a class="headerLink" href="features.html"> Features </a>
+          <a class="headerLink" href="#app"> App </a>
         </li>
         <li class="headerItem">
-          <a class="headerLink" href="app.html"> App </a>
+          <a class="headerLink" href="#precios"> Precios </a>
         </li>
         <li class="headerItem">
-          <a class="headerLink" href="contact.html"> Contacto </a>
+          <a class="headerLink" href="contact.html"> Contactanos </a>
+        </li>
+        <li class="headerItem">
+          <a class="headerLink" href="about:blank"> Acceso Clientes </a>
         </li>
       </ul>
     </header>
-    <section class="section">
-      <h1>Hero</h1>
+    <section class="heroSection">
+      <h1>Una mejor manera de gestionar tu restaurante</h1>
     </section>
-    <section>
-      <h2>Descripción</h2>
+    <section class="descriptionSection">
       <p class="descriptionText">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum.
+        commodo consequat.
       </p>
     </section>
-    <section>
-      <h2>Caracteristicas Principales</h2>
+    <section class="caracteristicasSection">
+      <div class="card yellow">
+        <img src="resources/svg/008-calendar.svg" class="cardIcon" />
+        <p class="cardTitle">Gestiona e imprimi todos tus pedidos</p>
+        <p class="cardText">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </div>
+      <div class="card blue">
+        <img src="resources/svg/045-delivery truck.svg" class="cardIcon" />
+        <p class="cardTitle">Asigna pedidos para delivery de forma facil</p>
+        <p class="cardText">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </div>
+      <div class="card orange">
+        <img src="resources/svg/030-credit card.svg" class="cardIcon" />
+        <p class="cardTitle">
+          Analiza tus estadisticas para entender mejor tu negocio
+        </p>
+        <p class="cardText">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </div>
     </section>
-    <section>
-      <h2>Nuestra App</h2>
+    <section id="app" class="appSection">
+      <h2>Conocé la app</h2>
+      <div class="appSectionItem">
+        <div class="screenshotImg">Screenshot</div>
+        <div class="screenshotDescription">
+          <p class="cardTitle">
+            Controlá todos tus pedidos en una sola pantalla
+          </p>
+          <p class="cardText">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+      </div>
+      <div class="appSectionItem">
+        <div class="screenshotDescription">
+          <p class="cardTitle">
+            Accedé a tu lista de productos y precios de manera rápida
+          </p>
+          <p class="cardText">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+        <div class="screenshotImg">Screenshot</div>
+      </div>
+      <div class="appSectionItem">
+        <div class="screenshotImg">Screenshot</div>
+        <div class="screenshotDescription">
+          <p class="cardTitle">Guardá toda la información de tus clientes</p>
+          <p class="cardText">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+      </div>
     </section>
-    <section>
-      <h2>Planes</h2>
-      <table>
-        <tr class="topRow">
-          <td>Nombre del Plan</td>
-          <td>Precio</td>
-          <td>Caracteristicas</td>
-        </tr>
-        <tr>
-          <td>Basico</td>
-          <td>0$/mes</td>
-          <td>
-            <ol>
-              <li>Maximo 25 usuarios</li>
-            </ol>
-          </td>
-        </tr>
-        <tr>
-          <td>Intermedio</td>
-          <td>$5/mes</td>
-          <td>
-            <ol>
-              <li>Maximo 100 usuarios</li>
-              <li>Estadisticas sobre tu negocio</li>
-            </ol>
-          </td>
-        </tr>
-        <tr>
-          <td>Avanzado</td>
-          <td>$15/mes</td>
-          <td>
-            <ol>
-              <li>Maximo 500 usuarios</li>
-              <li>Estadisticas sobre tu negocio</li>
-              <li>Soporte tecnico gratuito</li>
-            </ol>
-          </td>
-        </tr>
-      </table>
+    <section id="precios">
+      <h2>Precios</h2>
+      <div class="preciosSection">
+        <div class="card">
+          <div class="preciosTop">
+            <p class="preciosNombre">Inicial</p>
+            <p class="preciosValor">Gratis</p>
+          </div>
+          <div class="preciosBottom">
+            <ul>
+              <li class="preciosItem">
+                <img src="resources/checkmark.svg" class="preciosIcon" />
+                <p>Lorem ipsum dolor sit amet</p>
+              </li>
+              <li class="preciosItem">
+                <img src="resources/checkmark.svg" class="preciosIcon" />
+                <p>Lorem ipsum dolor sit amet</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="card">
+          <div class="preciosTop">
+            <p class="preciosNombre">Intermedio</p>
+            <p class="preciosValor">$500/mes</p>
+          </div>
+          <div class="preciosBottom">
+            <ul>
+              <li class="preciosItem">
+                <img src="resources/checkmark.svg" class="preciosIcon" />
+                <p>Lorem ipsum dolor sit amet</p>
+              </li>
+              <li class="preciosItem">
+                <img src="resources/checkmark.svg" class="preciosIcon" />
+                <p>Lorem ipsum dolor sit amet</p>
+              </li>
+              <li class="preciosItem">
+                <img src="resources/checkmark.svg" class="preciosIcon" />
+                <p>Lorem ipsum dolor sit amet</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="card">
+          <div class="preciosTop">
+            <p class="preciosNombre">Avanzado</p>
+            <p class="preciosValor">$1000/mes</p>
+          </div>
+          <div class="preciosBottom">
+            <ul>
+              <li class="preciosItem">
+                <img src="resources/checkmark.svg" class="preciosIcon" />
+                <p>Lorem ipsum dolor sit amet</p>
+              </li>
+              <li class="preciosItem">
+                <img src="resources/checkmark.svg" class="preciosIcon" />
+                <p>Lorem ipsum dolor sit amet</p>
+              </li>
+              <li class="preciosItem">
+                <img src="resources/checkmark.svg" class="preciosIcon" />
+                <p>Lorem ipsum dolor sit amet</p>
+              </li>
+              <li class="preciosItem">
+                <img src="resources/checkmark.svg" class="preciosIcon" />
+                <p>Lorem ipsum dolor sit amet</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
     <section>
       <h2>Clientes</h2>
@@ -93,36 +182,11 @@
       <h2>Contacto</h2>
       <form id="formulario">
         <label for="name">Tu nombre: </label>
-        <br />
         <input type="text" placeholder="Tu nombre" name="name" required />
-        <br />
         <label for="email">Tu email: </label>
-        <br />
         <input type="text" placeholder="Tu email" name="email" required />
-        <br />
-        <label for="nacionalidad">Tu nacionalidad: </label>
-        <br />
-        <input
-          type="radio"
-          name="nacionalidad"
-          value="arg"
-          class="inputOption"
-        />Argentino
-        <br />
-        <input type="radio" name="nacionalidad" value="otra" />Otra
-        <br />
-        <label for="plan">Me interesa el plan: </label>
-        <br />
-        <select name="plan">
-          <option value="basico">Basico</option>
-          <option value="intermedio">Intermedio</option>
-          <option value="avanzado">Avanzado</option>
-        </select>
-        <br />
         <label for="mensaje">Tu mensaje: </label>
-        <br />
         <textarea name="mensaje"></textarea>
-        <br />
         <input type="reset" value="Reiniciar" />
         <input type="submit" value="Enviar" />
       </form>
