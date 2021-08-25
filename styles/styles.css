@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
 
 body {
-  font-family: "Montserrat", sans-serif;
-  text-align: center;
+  font-family: "Open Sans", sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -15,6 +15,15 @@ section {
 
 a {
   text-decoration: none;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
 }
 
 /* Header */
@@ -76,6 +85,7 @@ header ul li:last-child:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(../resources/hero-background.jpg);
   background-size: cover;
@@ -90,6 +100,7 @@ header ul li:last-child:hover {
 
 .descriptionSection {
   display: flex;
+  text-align: center;
   align-items: center;
   padding-right: 15vw;
   padding-left: 15vw;
@@ -122,6 +133,7 @@ header ul li:last-child:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   flex: auto;
   border-radius: 16px;
   padding: 32px;
@@ -142,12 +154,12 @@ header ul li:last-child:hover {
 }
 
 .cardTitle {
+  font-family: "Montserrat", sans-serif;
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 .cardText {
-  font-size: 0.9rem;
   color: rgba(0, 0, 0, 0.7);
 }
 
@@ -189,8 +201,18 @@ header ul li:last-child:hover {
   padding-right: 5vw;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   margin-bottom: 16px;
+}
+
+.screenshotTitle {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.screenshotText {
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.7);
 }
 
 /* Precios */
@@ -201,7 +223,9 @@ header ul li:last-child:hover {
 }
 
 .preciosNombre {
+  font-family: 'Montserrat', sans-serif;
   font-weight: 600;
+  font-size: x-large;
 }
 
 .preciosValor {
@@ -232,12 +256,45 @@ header ul li:last-child:hover {
   opacity: 60%;
 }
 
+/* Clientes */
+
+.clientesSection {
+  min-height: 30vh;
+  padding-right: 10vw;
+  padding-left: 10vw;
+}
+
+.clientesGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: 8vh;
+  justify-content: center;
+  margin-top: 10vh;
+  margin-bottom: 5vh;
+}
+
+.clientesLogo {
+  align-self: center;
+  justify-self: center;
+  width: 35%;
+}
+
 /* Form */
+
+.formSection {
+  display: flex;
+  flex-direction: column;
+  padding-right: 25vw;
+  padding-left: 25vw;
+  margin-top: 5vh;
+}
 
 label {
   color: #424242;
   margin: 8px;
   text-align: left;
+  display: none;
 }
 
 .inputOption {
@@ -245,7 +302,6 @@ label {
 }
 
 input,
-select,
 textarea {
   padding: 12px;
   margin: 8px;
@@ -253,10 +309,9 @@ textarea {
   border: 1px solid #9e9e9e;
   margin-bottom: 12px;
   background-color: transparent;
-}
-
-select {
-  padding: 8px;
+  outline: none;
+  font-family: inherit;
+   font-size: inherit;
 }
 
 input[type="button"],
@@ -267,18 +322,23 @@ input[type="reset"] {
   padding: 8px 16px;
   margin: 4px;
   border: none;
+  cursor: pointer;
 }
 
-.column {
+.formButtons {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
 }
 
 /* Footer */
 
 .footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: black;
   color: white;
   padding: 16px;
   margin-top: 24px;
+  min-height: 20vh;
 }
