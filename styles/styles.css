@@ -29,6 +29,7 @@ h2 {
 /* Header */
 
 header {
+  font-family: "Montserrat", sans-serif;
   position: absolute;
   right: 5vw;
   top: 16px;
