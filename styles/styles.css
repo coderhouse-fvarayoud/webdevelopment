@@ -93,8 +93,15 @@ header ul li:last-child:hover {
   color: white;
   min-height: 70vh;
   font-size: 2rem;
-  padding-right: 25vw;
-  padding-left: 25vw;
+  padding-right: 10vw;
+  padding-left: 10vw;
+}
+
+@media only screen and (min-width: 1023px) {
+  .heroSection {
+    padding-right: 25vw;
+    padding-left: 25vw;
+  }
 }
 
 /* Description */
@@ -120,7 +127,7 @@ header ul li:last-child:hover {
 .caracteristicasSection,
 .preciosSection {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   grid-gap: 20px;
   min-height: 50vh;
   padding-right: 10vw;
@@ -129,13 +136,20 @@ header ul li:last-child:hover {
   padding-bottom: 5vh;
 }
 
+@media only screen and (min-width: 1023px) {
+  .caracteristicasSection,
+  .preciosSection {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+}
+
 .card {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  flex: auto;
   border-radius: 16px;
   padding: 32px;
   padding-left: 48px;
@@ -143,7 +157,7 @@ header ul li:last-child:hover {
 }
 
 .yellow {
-  background-color: #f0f0f0;
+  background-color: #fffde9;
 }
 
 .blue {
@@ -181,10 +195,24 @@ header ul li:last-child:hover {
 
 .appSectionItem {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   min-height: 50vh;
   margin-top: 5vh;
   margin-bottom: 5vh;
+}
+
+.appSectionItem:nth-child(odd) .screenshotImg {
+  grid-row: 1;
+}
+
+@media only screen and (min-width: 1023px) {
+  .appSectionItem {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .appSectionItem:nth-child(odd) .screenshotImg {
+    grid-row: auto;
+  }
 }
 
 .screenshotImg {
@@ -224,7 +252,7 @@ header ul li:last-child:hover {
 }
 
 .preciosNombre {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: x-large;
 }
@@ -312,7 +340,7 @@ textarea {
   background-color: transparent;
   outline: none;
   font-family: inherit;
-   font-size: inherit;
+  font-size: inherit;
 }
 
 input[type="button"],
