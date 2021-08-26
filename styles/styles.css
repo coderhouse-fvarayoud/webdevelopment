@@ -110,9 +110,16 @@ header ul li:last-child:hover {
   display: flex;
   text-align: center;
   align-items: center;
-  padding-right: 15vw;
-  padding-left: 15vw;
+  padding-right: 5vw;
+  padding-left: 5vw;
   min-height: 40vh;
+}
+
+@media only screen and (min-width: 1023px) {
+  .descriptionSection {
+    padding-right: 15vw;
+    padding-left: 15vw;
+  }
 }
 
 .descriptionText {
@@ -205,16 +212,6 @@ header ul li:last-child:hover {
   grid-row: 1;
 }
 
-@media only screen and (min-width: 1023px) {
-  .appSectionItem {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .appSectionItem:nth-child(odd) .screenshotImg {
-    grid-row: auto;
-  }
-}
-
 .screenshotImg {
   display: flex;
   justify-content: center;
@@ -222,6 +219,7 @@ header ul li:last-child:hover {
   background-color: #eceffb;
   border-radius: 32px;
   margin: 16px;
+  min-height: 30vh;
 }
 
 .screenshotDescription {
@@ -231,6 +229,7 @@ header ul li:last-child:hover {
   flex-direction: column;
   justify-content: center;
   margin-bottom: 16px;
+  text-align: center;
 }
 
 .screenshotTitle {
@@ -242,6 +241,20 @@ header ul li:last-child:hover {
 .screenshotText {
   font-size: 1rem;
   color: rgba(0, 0, 0, 0.7);
+}
+
+@media only screen and (min-width: 1023px) {
+  .appSectionItem {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .appSectionItem:nth-child(odd) .screenshotImg {
+    grid-row: auto;
+  }
+
+  .screenshotDescription {
+    text-align: left;
+  }
 }
 
 /* Precios */
@@ -314,9 +327,16 @@ header ul li:last-child:hover {
 .formSection {
   display: flex;
   flex-direction: column;
-  padding-right: 25vw;
-  padding-left: 25vw;
+  padding-right: 5vw;
+  padding-left: 5vw;
   margin-top: 5vh;
+}
+
+@media only screen and (min-width: 1023px) {
+  .formSection {
+    padding-right: 25vw;
+    padding-left: 25vw;
+  }
 }
 
 label {
