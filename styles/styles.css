@@ -59,10 +59,12 @@ p {
   border-radius: 16px;
   margin-left: 8px;
   margin-right: 8px;
+  transition: background-color 150ms;
 }
 
 .headerItem:hover {
   background-color: #343434;
+  transition: background-color 150ms;
 }
 
 header ul li:last-child {
@@ -104,10 +106,27 @@ header ul li:last-child:hover {
   }
 }
 
+.heroTitle {
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  animation-name: fadeInBottom;
+}
+
+@keyframes fadeInBottom {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 /* Description */
 
 .descriptionSection {
   display: flex;
+  background-image: linear-gradient(to bottom, #eeeeee, white);
   text-align: center;
   align-items: center;
   padding-right: 5vw;
@@ -164,15 +183,15 @@ header ul li:last-child:hover {
 }
 
 .yellow {
-  background-color: #fffde9;
+  background-image: linear-gradient(to bottom, #fffbce, white);
 }
 
 .blue {
-  background-color: #eceffb;
+  background-image: linear-gradient(to bottom, #cefcff, white);
 }
 
 .orange {
-  background-color: #fdece3;
+  background-image: linear-gradient(to bottom, #fdece3, white);
 }
 
 .cardTitle {
@@ -262,6 +281,14 @@ header ul li:last-child:hover {
 .preciosSection .card {
   background-color: #f8f8f8;
   justify-content: start;
+  cursor: pointer;
+  transition: all 150ms;
+}
+
+.preciosSection .card:hover {
+  background-color: rgb(230, 230, 230);
+  justify-content: start;
+  transition: all 150ms;
 }
 
 .preciosNombre {
@@ -320,6 +347,14 @@ header ul li:last-child:hover {
   align-self: center;
   justify-self: center;
   width: 35%;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+  cursor: pointer;
+}
+
+.clientesLogo:hover {
+  transform: scale(1.15);
 }
 
 /* Form */
