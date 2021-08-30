@@ -137,8 +137,6 @@ header ul li:last-child:hover {
   background-image: linear-gradient(to bottom, #eeeeee, white);
   text-align: center;
   align-items: center;
-  padding-right: 5vw;
-  padding-left: 5vw;
   min-height: 40vh;
 }
 
@@ -339,9 +337,8 @@ header ul li:last-child:hover {
 .clientesSection {
   display: flex;
   flex-direction: column;
-  min-height: 30vh;
-  padding-right: 10vw;
-  padding-left: 10vw;
+  padding-top: 10vh;
+  min-height: 85vh;
 }
 
 .carousel-control-prev-icon {
@@ -354,8 +351,9 @@ header ul li:last-child:hover {
 
 .clientesGrid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(1, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: 8vh;
   padding-left: 5vw;
   padding-right: 5vw;
   justify-content: center;
@@ -375,6 +373,20 @@ header ul li:last-child:hover {
 
 .clientesLogo:hover {
   transform: scale(1.15);
+}
+
+@media only screen and (min-width: 1023px) {
+  .clientesSection {
+    padding-right: 5vw;
+    padding-left: 5vw;
+    min-height: 75vh;
+  }
+
+  .clientesGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  }
 }
 
 /* Form */
