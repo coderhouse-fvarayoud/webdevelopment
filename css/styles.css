@@ -29,6 +29,7 @@ h1 {
 h2 {
   font-family: "Montserrat", sans-serif;
   text-align: center;
+  font-weight: 600;
 }
 
 /* Header */
@@ -189,6 +190,13 @@ header ul li:last-child:hover {
   padding-right: 48px;
 }
 
+.card:hover .cardIcon {
+  transform: scale(1.25);
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
 .yellow {
   background-image: linear-gradient(to bottom, #fffbce, white);
 }
@@ -214,6 +222,9 @@ header ul li:last-child:hover {
 .cardIcon {
   width: 25%;
   margin-bottom: 32px;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
 }
 
 /* App */
@@ -428,6 +439,7 @@ textarea {
   outline: none;
   font-family: inherit;
   font-size: inherit;
+  appearance: none;
 }
 
 input[type="button"],
