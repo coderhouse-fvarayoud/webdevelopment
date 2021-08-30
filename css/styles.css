@@ -14,7 +14,12 @@ section {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
+  color: inherit;
+}
+
+a:hover {
+  color: inherit;
 }
 
 h1 {
@@ -56,6 +61,7 @@ p {
 .headerItem {
   float: left;
   cursor: pointer;
+  color: white;
   border-radius: 16px;
   margin-left: 8px;
   margin-right: 8px;
@@ -90,11 +96,9 @@ header ul li:last-child:hover {
   align-items: center;
   text-align: center;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(../resources/hero-background.jpg);
+    url(../assets/hero-background.jpg);
   background-size: cover;
-  color: white;
   min-height: 70vh;
-  font-size: 2rem;
   padding-right: 10vw;
   padding-left: 10vw;
 }
@@ -107,7 +111,11 @@ header ul li:last-child:hover {
 }
 
 .heroTitle {
-  animation-duration: 2s;
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+  color: white;
+  animation-duration: 1.5s;
   animation-fill-mode: both;
   animation-name: fadeInBottom;
 }
@@ -177,6 +185,7 @@ header ul li:last-child:hover {
   align-items: center;
   text-align: center;
   border-radius: 16px;
+  border: none;
   padding: 32px;
   padding-left: 48px;
   padding-right: 48px;
@@ -328,16 +337,27 @@ header ul li:last-child:hover {
 /* Clientes */
 
 .clientesSection {
+  display: flex;
+  flex-direction: column;
   min-height: 30vh;
   padding-right: 10vw;
   padding-left: 10vw;
 }
 
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
 .clientesGrid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  row-gap: 8vh;
+  grid-template-rows: repeat(1, 1fr);
+  padding-left: 5vw;
+  padding-right: 5vw;
   justify-content: center;
   margin-top: 10vh;
   margin-bottom: 5vh;

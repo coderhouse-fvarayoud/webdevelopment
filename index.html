@@ -4,7 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="css/styles.css" />
     <title>Home</title>
   </head>
 
@@ -41,7 +48,7 @@
     </section>
     <section class="caracteristicasSection">
       <div class="card yellow">
-        <img src="resources/icon/008-calendar.svg" class="cardIcon" />
+        <img src="assets/icon/008-calendar.svg" class="cardIcon" />
         <p class="cardTitle">Gestioná e imprimí todos tus pedidos</p>
         <p class="cardText">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -49,7 +56,7 @@
         </p>
       </div>
       <div class="card blue">
-        <img src="resources/icon/045-delivery truck.svg" class="cardIcon" />
+        <img src="assets/icon/045-delivery truck.svg" class="cardIcon" />
         <p class="cardTitle">Asigná pedidos para delivery de forma fácil</p>
         <p class="cardText">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -57,7 +64,7 @@
         </p>
       </div>
       <div class="card orange">
-        <img src="resources/icon/030-credit card.svg" class="cardIcon" />
+        <img src="assets/icon/030-credit card.svg" class="cardIcon" />
         <p class="cardTitle">
           Analizá tus estadísticas para entender mejor tu negocio
         </p>
@@ -129,11 +136,11 @@
           <div class="preciosBottom">
             <ul>
               <li class="preciosItem">
-                <img src="resources/checkmark.svg" class="preciosIcon" />
+                <img src="assets/checkmark.svg" class="preciosIcon" />
                 <p>Lorem ipsum dolor sit amet</p>
               </li>
               <li class="preciosItem">
-                <img src="resources/checkmark.svg" class="preciosIcon" />
+                <img src="assets/checkmark.svg" class="preciosIcon" />
                 <p>Lorem ipsum dolor sit amet</p>
               </li>
             </ul>
@@ -147,15 +154,15 @@
           <div class="preciosBottom">
             <ul>
               <li class="preciosItem">
-                <img src="resources/checkmark.svg" class="preciosIcon" />
+                <img src="assets/checkmark.svg" class="preciosIcon" />
                 <p>Lorem ipsum dolor sit amet</p>
               </li>
               <li class="preciosItem">
-                <img src="resources/checkmark.svg" class="preciosIcon" />
+                <img src="assets/checkmark.svg" class="preciosIcon" />
                 <p>Lorem ipsum dolor sit amet</p>
               </li>
               <li class="preciosItem">
-                <img src="resources/checkmark.svg" class="preciosIcon" />
+                <img src="assets/checkmark.svg" class="preciosIcon" />
                 <p>Lorem ipsum dolor sit amet</p>
               </li>
             </ul>
@@ -169,19 +176,19 @@
           <div class="preciosBottom">
             <ul>
               <li class="preciosItem">
-                <img src="resources/checkmark.svg" class="preciosIcon" />
+                <img src="assets/checkmark.svg" class="preciosIcon" />
                 <p>Lorem ipsum dolor sit amet</p>
               </li>
               <li class="preciosItem">
-                <img src="resources/checkmark.svg" class="preciosIcon" />
+                <img src="assets/checkmark.svg" class="preciosIcon" />
                 <p>Lorem ipsum dolor sit amet</p>
               </li>
               <li class="preciosItem">
-                <img src="resources/checkmark.svg" class="preciosIcon" />
+                <img src="assets/checkmark.svg" class="preciosIcon" />
                 <p>Lorem ipsum dolor sit amet</p>
               </li>
               <li class="preciosItem">
-                <img src="resources/checkmark.svg" class="preciosIcon" />
+                <img src="assets/checkmark.svg" class="preciosIcon" />
                 <p>Lorem ipsum dolor sit amet</p>
               </li>
             </ul>
@@ -191,18 +198,74 @@
     </section>
     <section class="clientesSection">
       <h2>Clientes</h2>
-      <div class="clientesGrid">
-        <img src="resources/icon/008-calendar.svg" class="clientesLogo" />
-        <img src="resources/icon/002-information.svg" class="clientesLogo" />
-        <img
-          src="resources/icon/004-customer review.svg"
-          class="clientesLogo"
-        />
-        <img src="resources/icon/006-invoice.svg" class="clientesLogo" />
-        <img src="resources/icon/020-weighing scale.svg" class="clientesLogo" />
-        <img src="resources/icon/037-store.svg" class="clientesLogo" />
-        <img src="resources/icon/045-delivery truck.svg" class="clientesLogo" />
-        <img src="resources/icon/048-route.svg" class="clientesLogo" />
+
+      <div
+        id="carouselExampleControls"
+        class="carousel slide"
+        data-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="clientesGrid">
+              <img src="assets/icon/008-calendar.svg" class="clientesLogo" />
+              <img src="assets/icon/002-information.svg" class="clientesLogo" />
+              <img
+                src="assets/icon/004-customer review.svg"
+                class="clientesLogo"
+              />
+              <img
+                src="assets/icon/004-customer review.svg"
+                class="clientesLogo"
+              />
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="clientesGrid">
+              <img src="assets/icon/008-calendar.svg" class="clientesLogo" />
+              <img
+                src="assets/icon/004-customer review.svg"
+                class="clientesLogo"
+              />
+              <img src="assets/icon/002-information.svg" class="clientesLogo" />
+              <img
+                src="assets/icon/004-customer review.svg"
+                class="clientesLogo"
+              />
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="clientesGrid">
+              <img
+                src="assets/icon/004-customer review.svg"
+                class="clientesLogo"
+              />
+              <img src="assets/icon/008-calendar.svg" class="clientesLogo" />
+              <img src="assets/icon/002-information.svg" class="clientesLogo" />
+              <img
+                src="assets/icon/004-customer review.svg"
+                class="clientesLogo"
+              />
+            </div>
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleControls"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleControls"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
     </section>
     <section>
@@ -223,5 +286,21 @@
       </form>
     </section>
     <footer class="footer">Footer</footer>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
