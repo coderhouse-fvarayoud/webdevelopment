@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   margin: 0;
@@ -9,7 +13,7 @@ body {
 
 section {
   min-height: 30vh;
-  padding-top: 5vh;
+  padding-top: 10vh;
   padding-bottom: 5vh;
 }
 
@@ -35,21 +39,19 @@ h2 {
 /* Header */
 
 header {
+  justify-content: space-between;
   font-family: "Montserrat", sans-serif;
-  position: absolute;
-  right: 5vw;
-  top: 16px;
+  position: fixed;
+  padding-right: 32px;
+  top: 0px;
+  width: 100%;
   display: flex;
   padding-left: 32px;
   overflow: hidden;
-  background-color: transparent;
+  background-color: black;
   font-weight: 600;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+  z-index: 50;
+  opacity: 0.9;
 }
 
 p {
@@ -60,33 +62,48 @@ p {
 }
 
 .headerItem {
-  float: left;
   cursor: pointer;
   color: white;
   border-radius: 16px;
-  margin-left: 8px;
-  margin-right: 8px;
-  transition: background-color 150ms;
-}
-
-.headerItem:hover {
-  background-color: #343434;
-  transition: background-color 150ms;
-}
-
-header ul li:last-child {
-  background-color: rgb(0, 162, 255);
-}
-
-header ul li:last-child:hover {
-  background-color: rgb(0, 147, 233);
 }
 
 .headerLink {
   display: flex;
-  padding: 12px;
+  padding: 6px;
+  padding-left: 18px;
+  padding-right: 18px;
+  margin: 8px 4px;
   color: white;
   text-align: center;
+  transition: background-color 150ms;
+  border-radius: 6px;
+}
+
+.headerLink:hover {
+  background-color: #343434;
+  transition: background-color 150ms;
+}
+
+.hideOnMobile {
+  display: none;
+}
+
+header div:last-child .headerLink {
+  background-color: rgb(0, 162, 255);
+}
+
+header div:last-child:hover .headerLink {
+  background-color: rgb(0, 147, 233);
+}
+
+@media only screen and (min-width: 1023px) {
+  header {
+    justify-content: flex-end;
+  }
+
+  .hideOnMobile {
+    display: block;
+  }
 }
 
 /* Hero */
