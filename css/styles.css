@@ -40,6 +40,7 @@ h2 {
   font-family: "Montserrat", sans-serif;
   text-align: center;
   font-weight: 600;
+  color: #7754f8;
 }
 
 li {
@@ -52,7 +53,7 @@ ul {
 
 /* Header */
 
-.header {
+header {
   border-bottom: 1px solid #e2e8f0;
   font-family: "Montserrat", sans-serif;
   position: fixed;
@@ -69,7 +70,13 @@ ul {
   z-index: 100;
 }
 
-.hamburger {
+.logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #7754f8;
+}
+
+.burger {
   display: none;
 }
 
@@ -78,29 +85,28 @@ ul {
   width: 25px;
   height: 3px;
   margin: 5px auto;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
   background-color: #101010;
 }
 
-.nav-menu {
+.headerMenu {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.nav-item {
+.headerItem {
   margin-left: 1rem;
 }
 
-.nav-item.accesoClientes {
-  background-color: #482ff7;
+.headerItem.accesoClientes {
+  background-color: #7754f8;
   border-radius: 16px;
 }
 
-.nav-item:hover {
-  background-color: #482ff7;
+.headerItem:hover {
+  background-color: #7754f8;
   border-radius: 16px;
+  transition: background-color 0.5s;
 }
 
 .nav-link {
@@ -117,12 +123,7 @@ ul {
 
 .nav-link:hover {
   color: white;
-}
-
-.nav-logo {
-  font-size: 2.1rem;
-  font-weight: 700;
-  color: #482ff7;
+  transition: color 0.5s;
 }
 
 .darken {
@@ -140,28 +141,19 @@ ul {
   transition: all 1s;
 }
 
-.nav-menu.active {
+.headerMenu.active {
   transform-origin: top;
   transform: scaleY(1);
   transition: 0.5s;
 }
 
-.nav-item {
-  margin: 1rem;
-}
-
-/* .nav-link.active {
-    animation-duration: 1.5s;
-    animation-fill-mode: both;
-    animation-name: fadeInBottom;
-  } */
-
 @media only screen and (max-width: 768px) {
-  .hamburger {
+  .burger {
     display: block;
     cursor: pointer;
   }
-  .nav-menu {
+
+  .headerMenu {
     position: fixed;
     transform: scaleY(0);
     transform-origin: top;
@@ -177,6 +169,10 @@ ul {
     padding-bottom: 4rem;
     border-bottom-left-radius: 16px;
     border-bottom-right-radius: 16px;
+  }
+
+  .headerItem {
+    margin: 1rem 2rem;
   }
 }
 
@@ -244,7 +240,7 @@ ul {
 
 .descriptionText {
   font-size: 1rem;
-  line-height: 1.5;
+  line-height: 2;
   margin-left: 64px;
   margin-right: 64px;
 }
@@ -276,11 +272,13 @@ ul {
   justify-content: center;
   align-items: center;
   text-align: center;
-  border-radius: 16px;
+  border-radius: 32px;
   border: none;
   padding: 32px;
   padding-left: 48px;
   padding-right: 48px;
+  cursor: pointer;
+  background-color: #fafafa;
 }
 
 .card:hover .cardIcon {
@@ -290,22 +288,10 @@ ul {
   transition-duration: 300ms;
 }
 
-.yellow {
-  background-image: linear-gradient(to bottom, #fffbce, white);
-}
-
-.blue {
-  background-image: linear-gradient(to bottom, #cefcff, white);
-}
-
-.orange {
-  background-image: linear-gradient(to bottom, #fdece3, white);
-}
-
 .cardTitle {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 .cardText {
@@ -574,5 +560,5 @@ input[type="reset"] {
   color: white;
   padding: 16px;
   margin-top: 24px;
-  min-height: 20vh;
+  min-height: 10vh;
 }

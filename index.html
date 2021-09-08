@@ -16,26 +16,26 @@
   </head>
 
   <body>
-    <header class="header">
+    <header>
       <nav class="navbar">
-        <a href="#" class="nav-logo">Craft</a>
-        <ul class="nav-menu">
-          <li class="nav-item">
+        <a href="#" class="logo">Logo</a>
+        <ul class="headerMenu">
+          <li class="headerItem">
             <a href="#app" class="nav-link">App</a>
           </li>
-          <li class="nav-item">
+          <li class="headerItem">
             <a href="#precios" class="nav-link">Precios</a>
           </li>
-          <li class="nav-item">
+          <li class="headerItem">
             <a href="#contacto" class="nav-link">Contacto</a>
           </li>
-          <li class="nav-item accesoClientes">
+          <li class="headerItem accesoClientes">
             <a href="about:blank" class="nav-link accesoClientes"
               >Acceso Clientes</a
             >
           </li>
         </ul>
-        <div class="hamburger">
+        <div class="burger">
           <span class="bar"></span>
           <span class="bar"></span>
           <span class="bar"></span>
@@ -44,24 +44,22 @@
       <div class="darken"></div>
     </header>
     <script>
-      const hamburger = document.querySelector(".hamburger");
-      const navMenu = document.querySelector(".nav-menu");
+      const burger = document.querySelector(".burger");
+      const navMenu = document.querySelector(".headerMenu");
       const navLink = document.querySelectorAll(".nav-link");
       const darken = document.querySelector(".darken");
 
-      hamburger.addEventListener("click", mobileMenu);
+      burger.addEventListener("click", mobileMenu);
+      navLink.forEach((n) => n.addEventListener("click", closeMenu));
 
       function mobileMenu() {
-        hamburger.classList.toggle("active");
+        burger.classList.toggle("active");
         navMenu.classList.toggle("active");
-        // navLink.classList.toggle("active");
         darken.classList.toggle("active");
       }
 
-      navLink.forEach((n) => n.addEventListener("click", closeMenu));
-
       function closeMenu() {
-        hamburger.classList.remove("active");
+        burger.classList.remove("active");
         navMenu.classList.remove("active");
         darken.classList.remove("active");
       }
@@ -79,7 +77,7 @@
       </p>
     </section>
     <section class="caracteristicasSection">
-      <div class="card yellow">
+      <div class="card">
         <img src="assets/icon/008-calendar.svg" class="cardIcon" />
         <p class="cardTitle">Gestioná e imprimí todos tus pedidos</p>
         <p class="cardText">
@@ -87,7 +85,7 @@
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
       </div>
-      <div class="card blue">
+      <div class="card">
         <img src="assets/icon/045-delivery truck.svg" class="cardIcon" />
         <p class="cardTitle">Asigná pedidos para delivery de forma fácil</p>
         <p class="cardText">
@@ -95,12 +93,12 @@
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
       </div>
-      <div class="card orange">
+      <div class="card">
         <img src="assets/icon/030-credit card.svg" class="cardIcon" />
         <p class="cardTitle">
           Analizá tus estadísticas para entender mejor tu negocio
         </p>
-        <p class="cardText">
+        <p class="cardText orange">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
