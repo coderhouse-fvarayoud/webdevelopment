@@ -16,23 +16,57 @@
   </head>
 
   <body>
-    <header class="headerList">
-      <div class="headerItem">
-        <a class="headerLink" href="#hero"> Inicio </a>
-      </div>
-      <div class="headerItem hideOnMobile">
-        <a class="headerLink" href="#app"> App </a>
-      </div>
-      <div class="headerItem hideOnMobile">
-        <a class="headerLink" href="#precios"> Precios </a>
-      </div>
-      <div class="headerItem hideOnMobile">
-        <a class="headerLink" href="#contacto"> Contactanos </a>
-      </div>
-      <div class="headerItem">
-        <a class="headerLink" href="about:blank"> Acceso Clientes </a>
-      </div>
+    <header class="header">
+      <nav class="navbar">
+        <a href="#" class="nav-logo">Craft</a>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#app" class="nav-link">App</a>
+          </li>
+          <li class="nav-item">
+            <a href="#precios" class="nav-link">Precios</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contacto" class="nav-link">Contacto</a>
+          </li>
+          <li class="nav-item accesoClientes">
+            <a href="about:blank" class="nav-link accesoClientes"
+              >Acceso Clientes</a
+            >
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+      <div class="darken"></div>
     </header>
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const navMenu = document.querySelector(".nav-menu");
+      const navLink = document.querySelectorAll(".nav-link");
+      const darken = document.querySelector(".darken");
+
+      hamburger.addEventListener("click", mobileMenu);
+
+      function mobileMenu() {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+        // navLink.classList.toggle("active");
+        darken.classList.toggle("active");
+      }
+
+      navLink.forEach((n) => n.addEventListener("click", closeMenu));
+
+      function closeMenu() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+        darken.classList.remove("active");
+      }
+    </script>
+
     <section id="hero" class="heroSection">
       <h1 class="heroTitle">Una mejor manera de gestionar tu restaurante</h1>
     </section>
