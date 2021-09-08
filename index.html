@@ -16,7 +16,7 @@
   </head>
 
   <body>
-    <header>
+    <header class="paddingGlobal">
       <nav class="navbar">
         <a href="#" class="logo">Logo</a>
         <ul class="headerMenu">
@@ -41,34 +41,13 @@
           <span class="bar"></span>
         </div>
       </nav>
-      <div class="darken"></div>
     </header>
-    <script>
-      const burger = document.querySelector(".burger");
-      const navMenu = document.querySelector(".headerMenu");
-      const navLink = document.querySelectorAll(".nav-link");
-      const darken = document.querySelector(".darken");
+    <div class="darken"></div>
 
-      burger.addEventListener("click", mobileMenu);
-      navLink.forEach((n) => n.addEventListener("click", closeMenu));
-
-      function mobileMenu() {
-        burger.classList.toggle("active");
-        navMenu.classList.toggle("active");
-        darken.classList.toggle("active");
-      }
-
-      function closeMenu() {
-        burger.classList.remove("active");
-        navMenu.classList.remove("active");
-        darken.classList.remove("active");
-      }
-    </script>
-
-    <section id="hero" class="heroSection">
+    <section id="hero" class="heroSection paddingGlobal">
       <h1 class="heroTitle">Una mejor manera de gestionar tu restaurante</h1>
     </section>
-    <section class="descriptionSection">
+    <section class="descriptionSection paddingGlobal">
       <p class="descriptionText">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -76,7 +55,7 @@
         commodo consequat.
       </p>
     </section>
-    <section class="caracteristicasSection">
+    <section class="caracteristicasSection paddingGlobal">
       <div class="card">
         <img src="assets/icon/008-calendar.svg" class="cardIcon" />
         <p class="cardTitle">Gestioná e imprimí todos tus pedidos</p>
@@ -104,7 +83,7 @@
         </p>
       </div>
     </section>
-    <section id="app" class="appSection">
+    <section id="app" class="appSection paddingGlobal">
       <h2>Conocé la app</h2>
       <div class="appSectionItem">
         <div class="screenshotImg">Screenshot</div>
@@ -157,21 +136,21 @@
     </section>
     <section id="precios">
       <h2>Precios</h2>
-      <div class="preciosSection">
+      <div class="preciosSection paddingGlobal">
         <div class="card">
           <div class="preciosTop">
             <p class="preciosNombre">Inicial</p>
-            <p class="preciosValor">Gratis</p>
+            <span class="preciosValor">Gratis</span>
           </div>
           <div class="preciosBottom">
             <ul>
               <li class="preciosItem">
                 <img src="assets/checkmark.svg" class="preciosIcon" />
-                <p>Lorem ipsum dolor sit amet</p>
+                <span>Lorem ipsum dolor sit amet</span>
               </li>
               <li class="preciosItem">
                 <img src="assets/checkmark.svg" class="preciosIcon" />
-                <p>Lorem ipsum dolor sit amet</p>
+                <span>Lorem ipsum dolor sit amet</span>
               </li>
             </ul>
           </div>
@@ -179,21 +158,21 @@
         <div class="card">
           <div class="preciosTop">
             <p class="preciosNombre">Intermedio</p>
-            <p class="preciosValor">$500/mes</p>
+            <span class="preciosValor">$500/mes</span>
           </div>
           <div class="preciosBottom">
             <ul>
               <li class="preciosItem">
                 <img src="assets/checkmark.svg" class="preciosIcon" />
-                <p>Lorem ipsum dolor sit amet</p>
+                <span>Lorem ipsum dolor sit amet</span>
               </li>
               <li class="preciosItem">
                 <img src="assets/checkmark.svg" class="preciosIcon" />
-                <p>Lorem ipsum dolor sit amet</p>
+                <span>Lorem ipsum dolor sit amet</span>
               </li>
               <li class="preciosItem">
                 <img src="assets/checkmark.svg" class="preciosIcon" />
-                <p>Lorem ipsum dolor sit amet</p>
+                <span>Lorem ipsum dolor sit amet</span>
               </li>
             </ul>
           </div>
@@ -201,32 +180,32 @@
         <div class="card">
           <div class="preciosTop">
             <p class="preciosNombre">Avanzado</p>
-            <p class="preciosValor">$1000/mes</p>
+            <span class="preciosValor">$1000/mes</span>
           </div>
           <div class="preciosBottom">
             <ul>
               <li class="preciosItem">
                 <img src="assets/checkmark.svg" class="preciosIcon" />
-                <p>Lorem ipsum dolor sit amet</p>
+                <span>Lorem ipsum dolor sit amet</span>
               </li>
               <li class="preciosItem">
                 <img src="assets/checkmark.svg" class="preciosIcon" />
-                <p>Lorem ipsum dolor sit amet</p>
+                <span>Lorem ipsum dolor sit amet</span>
               </li>
               <li class="preciosItem">
                 <img src="assets/checkmark.svg" class="preciosIcon" />
-                <p>Lorem ipsum dolor sit amet</p>
+                <span>Lorem ipsum dolor sit amet</span>
               </li>
               <li class="preciosItem">
                 <img src="assets/checkmark.svg" class="preciosIcon" />
-                <p>Lorem ipsum dolor sit amet</p>
+                <span>Lorem ipsum dolor sit amet</span>
               </li>
             </ul>
           </div>
         </div>
       </div>
     </section>
-    <section class="clientesSection">
+    <section class="clientesSection paddingGlobal">
       <h2>Clientes</h2>
 
       <div
@@ -297,7 +276,7 @@
     </section>
     <section id="contacto">
       <h2>Interesado? Escribinos!</h2>
-      <form class="formSection">
+      <form class="formSection paddingGlobal">
         <label for="name">Tu nombre: </label>
         <input type="text" placeholder="Tu nombre" name="name" required />
         <label for="email">Tu email: </label>
@@ -313,6 +292,28 @@
       </form>
     </section>
     <footer class="footer">Footer</footer>
+    <script>
+      const burger = document.querySelector(".burger");
+      const navMenu = document.querySelector(".headerMenu");
+      const navLink = document.querySelectorAll(".nav-link");
+      const darken = document.querySelector(".darken");
+      const body = document.querySelector("body");
+
+      burger.addEventListener("click", mobileMenu);
+      navLink.forEach((n) => n.addEventListener("click", closeMenu));
+
+      function mobileMenu() {
+        burger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+        darken.classList.toggle("active");
+      }
+
+      function closeMenu() {
+        burger.classList.remove("active");
+        navMenu.classList.remove("active");
+        darken.classList.remove("active");
+      }
+    </script>
 
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
