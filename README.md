@@ -2,4 +2,4 @@
 
 - Alumno: Federico Varayoud
 
-Deploy: https://coderhouse-fvarayoud.github.io/weddevelopment/
+Deploy: https://coderhouse-fvarayoud.github.io/webdevelopment/
