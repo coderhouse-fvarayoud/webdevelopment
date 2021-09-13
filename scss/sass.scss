@@ -26,6 +26,10 @@ section {
   min-height: 30vh;
   padding-top: 15vh;
   padding-bottom: 5vh;
+}
+
+section,
+header {
   padding-right: 5vw;
   padding-left: 5vw;
 
@@ -159,7 +163,7 @@ header {
     transition: background-color 0.5s;
   }
 
-  &.--acceso_clientes {
+  &--acceso_clientes {
     background-color: $violeta;
     border-radius: 16px;
   }
@@ -178,14 +182,14 @@ header {
     transition: color 0.5s;
   }
 
-  &.--acceso_clientes {
+  &--acceso_clientes {
     font-size: 1.2rem;
     font-weight: 600;
     color: white;
   }
 }
 
-.header_darken {
+.header__darken {
   display: block;
   background-color: black;
   opacity: 0%;

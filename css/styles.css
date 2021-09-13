@@ -16,11 +16,15 @@ body {
 section {
   min-height: 30vh;
   padding-top: 15vh;
-  padding-bottom: 5vh;
+  padding-bottom: 5vh; }
+
+section,
+header {
   padding-right: 5vw;
   padding-left: 5vw; }
   @media only screen and (min-width: 1023px) {
-    section {
+    section,
+    header {
       padding-right: 10vw;
       padding-left: 10vw; } }
 
@@ -119,7 +123,7 @@ header {
     background-color: #7754f8;
     border-radius: 16px;
     transition: background-color 0.5s; }
-  .header__menu__item.--acceso_clientes {
+  .header__menu__item--acceso_clientes {
     background-color: #7754f8;
     border-radius: 16px; }
   @media only screen and (max-width: 768px) {
@@ -132,12 +136,12 @@ header {
   .header__menu__link:hover {
     color: white;
     transition: color 0.5s; }
-  .header__menu__link.--acceso_clientes {
+  .header__menu__link--acceso_clientes {
     font-size: 1.2rem;
     font-weight: 600;
     color: white; }
 
-.header_darken {
+.header__darken {
   display: block;
   background-color: black;
   opacity: 0%;
@@ -146,7 +150,7 @@ header {
   width: 100%;
   pointer-events: none;
   z-index: 25; }
-  .header_darken.active {
+  .header__darken.active {
     opacity: 75%;
     transition: all 1s; }
 
