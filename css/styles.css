@@ -152,7 +152,8 @@ header {
   z-index: 25; }
   .header__darken.active {
     opacity: 75%;
-    transition: all 1s; }
+    transition: all 1s;
+    pointer-events: inherit; }
 
 /* Hero */
 .hero {
@@ -307,11 +308,10 @@ header {
   justify-content: start;
   cursor: pointer;
   transition: all 500ms; }
-
-.precios .card:hover {
-  background-color: #dae6f5;
-  justify-content: start;
-  transition: all 500ms; }
+  .precios .card:hover {
+    background-color: #dae6f5;
+    justify-content: start;
+    transition: all 500ms; }
 
 .precios__nombre {
   font-family: "Montserrat", sans-serif;

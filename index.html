@@ -308,9 +308,12 @@
       const navMenu = document.querySelector(".header__menu");
       const navLink = document.querySelectorAll(".header__menu__link");
       const darken = document.querySelector(".header__darken");
+      const logo = document.querySelector(".header__logo");
       const body = document.querySelector("body");
 
       burger.addEventListener("click", mobileMenu);
+      darken.addEventListener("click", closeMenu);
+      logo.addEventListener("click", closeMenu);
       navLink.forEach((n) => n.addEventListener("click", closeMenu));
 
       function mobileMenu() {
