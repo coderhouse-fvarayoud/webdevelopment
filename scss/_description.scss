@@ -1,0 +1,15 @@
+.description {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    min-height: 40vh;
+  }
+  
+  .description__text {
+    font-size: 1rem;
+    line-height: 2;
+  
+    @include xl {
+      font-size: 1.3rem;
+    }
+  }

@@ -1,0 +1,60 @@
+.caracteristicas,
+.precios {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 20px;
+  min-height: 50vh;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+
+  @include xl {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 32px;
+  border: none;
+  padding: 32px;
+  padding-left: 48px;
+  padding-right: 48px;
+  cursor: pointer;
+  background-color: $gray-200;
+  // transition: background-color 500ms;
+
+  &:hover {
+    background-color: $gray-300;
+    //transition: background-color 500ms;
+
+    .card__icon {
+      transform: scale(1.1);
+      transition-property: transform;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-duration: 500ms;
+    }
+  }
+}
+
+.card__title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.card__text {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.card__icon {
+  width: 25%;
+  margin-bottom: 32px;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
