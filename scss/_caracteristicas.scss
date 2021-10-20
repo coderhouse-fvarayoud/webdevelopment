@@ -1,10 +1,9 @@
-.caracteristicas,
-.precios {
+.caracteristicas {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-gap: 20px;
   min-height: 50vh;
-  padding-top: 5vh;
+  padding-top: 15vh;
   padding-bottom: 5vh;
 
   @include xl {
@@ -25,15 +24,19 @@
   padding-left: 48px;
   padding-right: 48px;
   cursor: pointer;
-  background-color: $gray-200;
+  background-color: #fafafa;
+  margin-bottom: 100px;
   // transition: background-color 500ms;
 
   &:hover {
-    background-color: $gray-300;
+    // background-color: $gray-300;
     //transition: background-color 500ms;
+    transform: scale(1.02);
+    transition-duration: 500ms;
 
     .card__icon {
       transform: scale(1.1);
+
       transition-property: transform;
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
       transition-duration: 500ms;
@@ -52,8 +55,18 @@
 }
 
 .card__icon {
-  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  font-size: 3rem;
+  color: $primary-100;
+  background-color: white;
+  padding: 16px;
+  border-radius: 100%;
   margin-bottom: 32px;
+  margin-top: -100px;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 300ms;

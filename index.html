@@ -13,21 +13,25 @@
     guardá información de tus clientes, y muchas funciones más!">
   <meta name="keywords" content="SOFTWARE, GESTION, RESTAURANTE, DELIVERY, PEDIDOS">
   <title>Logo | Software para restaurantes, casas de comida y delivery</title>
+  <script src="https://kit.fontawesome.com/5448cf938b.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <header class="paddingGlobal">
     <nav class="header__navbar">
-      <a href="#" class="header__logo">Logo</a>
+      <div class="header__logo__container"><i class="fas fa-hamburger header__logo__icon"></i>
+        <a href="#" class="header__logo">pedidos</a>
+      </div>
+
       <ul class="header__menu">
         <li class="header__menu__item">
-          <a href="#app" class="header__menu__link">App</a>
+          <a href="#app" class="header__menu__link">¿Como funciona?</a>
         </li>
         <li class="header__menu__item">
           <a href="#precios" class="header__menu__link">Precios</a>
         </li>
         <li class="header__menu__item">
-          <a href="#contacto" class="header__menu__link">Contacto</a>
+          <a href="#contacto" class="header__menu__link">Contactanos</a>
         </li>
         <li class="header__menu__item header__menu__item--acceso_clientes">
           <a href="about:blank" class="header__menu__link header__menu__link--acceso_clientes">Acceso Clientes</a>
@@ -43,66 +47,106 @@
   <div class="header__darken"></div>
 
   <section id="hero" class="hero">
-    <h1 class="hero__title">Una mejor manera de gestionar tu restaurante</h1>
-  </section>
-  <section class="description">
-    <p class="description__text">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat.
+    <h1 class="hero__title">Una mejor manera de gestionar tu negocio</h1>
+    <p class="hero__subtitle">
+      Con nuestra app podes crear tu tienda online, recibir pedidos de tus clientes, ver estadísticas de tu negocio y
+      muchas cosas mas!
     </p>
   </section>
+
   <section class="caracteristicas">
     <div class="card fade-in">
-      <img src="assets/icon/008-calendar.svg" class="card__icon" />
-      <p class="card__title">Gestioná e imprimí todos tus pedidos</p>
+      <div class="card__icon">
+        <i class="fas fa-store"></i>
+      </div>
+      <p class="card__title">Creá tu propia tienda online</p>
       <p class="card__text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Obtendrás un link exclusivo para que tus clientes accedan y vean todo lo que tenes disponible
       </p>
     </div>
     <div class="card fade-in delay-1">
-      <img src="assets/icon/045-delivery truck.svg" class="card__icon" />
-      <p class="card__title">Asigná pedidos para delivery de forma fácil</p>
+      <div class="card__icon">
+        <i class="fas fa-clipboard-list"></i>
+      </div>
+      <p class="card__title">Gestioná todos tus pedidos de forma facil</p>
       <p class="card__text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Todos tus pedidos en una sola pantalla, donde podras gestionarlos de forma facil y rapida.
       </p>
     </div>
     <div class="card fade-in delay-2">
-      <img src="assets/icon/030-credit card.svg" class="card__icon" />
+      <div class="card__icon">
+        <i class="fas fa-chart-pie"></i>
+      </div>
       <p class="card__title">
         Analizá tus estadísticas para entender mejor tu negocio
       </p>
       <p class="card__text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Analiza cuales son tus productos mas vendidos, tu nivel de ventas total, y muchas otras cosas
+      </p>
+    </div>
+    <div class="card fade-in">
+      <div class="card__icon">
+        <i class="fas fa-users"></i>
+      </div>
+      <p class="card__title">
+        Guardá la informacion de tus clientes
+      </p>
+      <p class="card__text">
+        Cada cliente se guarda en el sistema, por lo que no tendrás que pedirle nuevamente sus datos cada vez que se
+        comuniquen.
+      </p>
+    </div>
+    <div class="card fade-in delay-1">
+      <div class="card__icon">
+        <i class="fas fa-truck"></i>
+      </div>
+      <p class="card__title">
+        Asigná pedidos a tu delivery
+      </p>
+      <p class="card__text">
+        Tu delivery puede ver todos los pedidos que tiene asignados desde su teléfono
+      </p>
+    </div>
+    <div class="card fade-in delay-2">
+      <div class="card__icon">
+        <i class="fas fa-cloud"></i>
+      </div>
+      <p class="card__title">
+        Toda tu información, en la nube
+      </p>
+      <p class="card__text">
+        Tus datos se almacenan de forma segura en tu cuenta para que puedas acceder cuando sea y donde sea.
       </p>
     </div>
   </section>
   <section id="app" class="app">
-    <h2 class="conoce-la-app">Conocé la app</h2>
+    <h2 class="conoce-la-app">¿Como funciona?</h2>
     <div class="app__item">
       <div class="app__screenshot__img  fade-in">Screenshot</div>
       <div class="app__screenshot__description  fade-in delay-1">
+        <p class="app__screenshot__number">
+          1
+        </p>
         <p class="app__screenshot__title">
-          Controlá todos tus pedidos en una sola pantalla
+          Creas tu cuenta de forma 100% online
         </p>
         <p class="app__screenshot__text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Podes registrar tu tienda desde nuestro sitio, configurarla como más te guste y cargar todos los datos de los
+          productos que tenes a la venta.
         </p>
       </div>
     </div>
     <div class="app__item">
       <div class="app__screenshot__description fade-in delay-1">
+        <p class="app__screenshot__number">
+          2
+        </p>
         <p class="app__screenshot__title">
-          Accedé a tu lista de productos y precios de manera rápida
+          Tus clientes acceden a tu tienda y arman su pedido
         </p>
         <p class="app__screenshot__text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Generamos un link exclusivo para tu tienda para que compartas con tus clientes. Desde ahi, podrán ver todos
+          tus productos a la venta, armar su pedido y coordinar forma de entrega.
         </p>
       </div>
       <div class="app__screenshot__img fade-in">Screenshot</div>
@@ -110,23 +154,29 @@
     <div class="app__item">
       <div class="app__screenshot__img fade-in">Screenshot</div>
       <div class="app__screenshot__description fade-in delay-1">
+        <p class="app__screenshot__number">
+          3
+        </p>
         <p class="app__screenshot__title">
-          Guardá toda la información de tus clientes
+          Recibis el pedido por Whatsapp y en nuestro sitio
         </p>
         <p class="app__screenshot__text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Cuando un cliente genere un pedido, te llegara un mensaje al Whatsapp de tu negocio, y ademas podras verlo,
+          aceptarlo o editarlo desde el panel de control de tu tienda.
         </p>
       </div>
     </div>
     <div class="app__item">
       <div class="app__screenshot__description fade-in delay-1">
+        <p class="app__screenshot__number">
+          4
+        </p>
         <p class="app__screenshot__title">
-          Accedé a tu lista de productos y precios de manera rápida
+          Controlás todo desde tu panel de control
         </p>
         <p class="app__screenshot__text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Cada tienda cuenta con un panel de control, donde facilmente podras ver todos tus pedidos, gestionar tu lista
+          de productos, ver informacion de tus clientes, estadisticas de tu negocio y mucho mas!
         </p>
       </div>
       <div class="app__screenshot__img fade-in">Screenshot</div>
@@ -138,40 +188,19 @@
       <div class="card fade-in">
         <div class="precios__top">
           <p class="precios__nombre">Inicial</p>
-          <span class="precios__valor">Gratis</span>
-        </div>
-        <div class="precios__bottom">
-          <ul>
-            <li class="precios__item">
-              <img src="assets/checkmark.svg" class="precios__item__icon" />
-              <span>Lorem ipsum dolor sit amet</span>
-            </li>
-            <li class="precios__item">
-              <img src="assets/checkmark.svg" class="precios__item__icon" />
-              <span>Lorem ipsum dolor sit amet</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="card fade-in">
-        <div class="precios__top">
-          <p class="precios__nombre">Intermedio</p>
           <span class="precios__valor">$500/mes</span>
         </div>
         <div class="precios__bottom">
           <ul>
             <li class="precios__item">
-              <img src="assets/checkmark.svg" class="precios__item__icon" />
-              <span>Lorem ipsum dolor sit amet</span>
+              <i class="fas fa-check-circle precios__item__icon"></i>
+              <span>Crea tu tienda online</span>
             </li>
             <li class="precios__item">
-              <img src="assets/checkmark.svg" class="precios__item__icon" />
-              <span>Lorem ipsum dolor sit amet</span>
+              <i class="fas fa-check-circle precios__item__icon"></i>
+              <span>Recibi y gestiona pedidos desde el panel de control</span>
             </li>
-            <li class="precios__item">
-              <img src="assets/checkmark.svg" class="precios__item__icon" />
-              <span>Lorem ipsum dolor sit amet</span>
-            </li>
+
           </ul>
         </div>
       </div>
@@ -183,20 +212,20 @@
         <div class="precios__bottom">
           <ul>
             <li class="precios__item">
-              <img src="assets/checkmark.svg" class="precios__item__icon" />
-              <span>Lorem ipsum dolor sit amet</span>
+              <i class="fas fa-check-circle precios__item__icon"></i>
+              <span>Crea tu tienda online</span>
             </li>
             <li class="precios__item">
-              <img src="assets/checkmark.svg" class="precios__item__icon" />
-              <span>Lorem ipsum dolor sit amet</span>
+              <i class="fas fa-check-circle precios__item__icon"></i>
+              <span>Recibi y gestiona pedidos desde el panel de control</span>
             </li>
             <li class="precios__item">
-              <img src="assets/checkmark.svg" class="precios__item__icon" />
-              <span>Lorem ipsum dolor sit amet</span>
+              <i class="fas fa-check-circle precios__item__icon"></i>
+              <span>Recordá la informacion de todos tus clientes</span>
             </li>
             <li class="precios__item">
-              <img src="assets/checkmark.svg" class="precios__item__icon" />
-              <span>Lorem ipsum dolor sit amet</span>
+              <i class="fas fa-check-circle precios__item__icon"></i>
+              <span>Analizá estadisticas de ventas de tu negocio</span>
             </li>
           </ul>
         </div>
@@ -245,7 +274,7 @@
   </section>
   <section id="contacto">
     <h2>Interesado? Escribinos!</h2>
-    <form class="form">
+    <form class="form" action="https://formspree.io/f/mqkwobjz" method="POST">
       <label for="name">Tu nombre: </label>
       <input type="text" placeholder="Tu nombre" name="name" required />
       <label for="email">Tu email: </label>
@@ -260,7 +289,8 @@
       </div>
     </form>
   </section>
-  <footer class="footer">Footer</footer>
+  <footer class="footer">
+    2021 ©</footer>
   <script>
     const burger = document.querySelector(".header__burger");
     const navMenu = document.querySelector(".header__menu");

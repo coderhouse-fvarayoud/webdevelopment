@@ -1,66 +1,79 @@
 .app {
-    display: flex;
-    flex-direction: column;
-    min-height: 70vh;
-  }
-  
-  .app__item {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    min-height: 50vh;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
-  
-    &:nth-child(odd) {
-      .app__screenshot__img {
-        grid-row: 1;
-      }
+  display: flex;
+  flex-direction: column;
+  min-height: 70vh;
+}
+
+.app__item {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  min-height: 50vh;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  text-align: center;
+
+  &:nth-child(even) {
+    .app__screenshot__description {
+      grid-row: 1;
     }
-  
-    @include xl {
-      grid-template-columns: repeat(2, 1fr);
-  
-      &:nth-child(odd) {
-        .app__screenshot__img {
-          grid-row: auto;
-        }
-      }
-  
+  }
+
+  @include xl {
+    grid-template-columns: repeat(2, 1fr);
+
+    &:nth-child(even) {
       .app__screenshot__description {
-        text-align: left;
-        padding-left: 16px;
-        padding-right: 0vw;
+        grid-row: auto;
       }
     }
+
+    .app__screenshot__description {
+      text-align: left;
+      padding-left: 16px;
+      padding-right: 0vw;
+    }
+
+    .app__screenshot__description:nth-child(odd) {
+      text-align: right;
+      padding-right: 16px;
+    }
   }
+}
+
+.app__screenshot__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $gray-200;
+  border-radius: 32px;
+  margin: 16px;
+  min-height: 30vh;
+}
+
+.app__screenshot__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 16px;
   
-  .app__screenshot__img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: $gray-200;
-    border-radius: 32px;
-    margin: 16px;
-    min-height: 30vh;
-  }
-  
-  .app__screenshot__description {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-bottom: 16px;
-    text-align: center;
-    padding-left: 10vw;
-    padding-right: 10vw;
-  }
-  
-  .app__screenshot__title {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 600;
-    font-size: 1.3rem;
-  }
-  
-  .app__screenshot__text {
-    font-size: 1rem;
-    color: rgba(0, 0, 0, 0.7);
-  }
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+.app__screenshot__title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.app__screenshot__number {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: $primary-100;
+  font-size: 3rem;
+}
+
+.app__screenshot__text {
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.7);
+}

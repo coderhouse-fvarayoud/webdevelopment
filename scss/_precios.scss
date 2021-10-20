@@ -1,49 +1,62 @@
 .precios {
-    .card {
-      background-color: $gray-200;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 20px;
+  min-height: 50vh;
+  padding-top: 15vh;
+  padding-bottom: 5vh;
+
+  @include xl {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+
+  .card {
+    background-color: #fafafa;
+    justify-content: start;
+    cursor: pointer;
+    transition: all 500ms;
+
+    &:hover {
       justify-content: start;
-      cursor: pointer;
       transition: all 500ms;
-  
-      &:hover {
-        background-color: $gray-300;
-        justify-content: start;
-        transition: all 500ms;
-      }
     }
   }
-  
-  .precios__nombre {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 600;
-    font-size: x-large;
-  }
-  
-  .precios__valor {
-    font-size: x-large;
-    font-weight: 700;
-    color: orange;
-  }
-  
-  .precios__top {
-    border-bottom: 2px solid $gray-300;
-    padding: 8px;
-    padding-bottom: 32px;
-  }
-  
-  .precios__item {
-    display: flex;
-    align-items: center;
-  }
-  
-  .precios__item__icon {
-    width: 10%;
-    margin-right: 8px;
-  }
-  
-  .precios__bottom {
-    text-align: start;
-    padding-top: 32px;
-    font-size: 0.9rem;
-    opacity: 60%;
-  }
+}
+
+.precios__nombre {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: x-large;
+}
+
+.precios__valor {
+  font-size: x-large;
+  font-weight: 700;
+  color: $primary-100;
+}
+
+.precios__top {
+  border-bottom: 2px solid $gray-300;
+  padding: 8px;
+  padding-bottom: 32px;
+}
+
+.precios__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.precios__item__icon {
+  font-size: 1.5rem;
+  color: green;
+  margin-right: 8px;
+}
+
+.precios__bottom {
+  text-align: start;
+  padding-top: 32px;
+  font-size: 0.9rem;
+  opacity: 60%;
+}
