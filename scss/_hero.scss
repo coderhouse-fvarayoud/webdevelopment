@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-around;
   background-size: cover;
-  min-height: 70vh;
+  min-height: 80vh;
   background: rgb(255, 255, 255);
   background: linear-gradient(
     90deg,
@@ -36,6 +36,27 @@
   animation: float 6s ease-in-out infinite;
 }
 
+.hero__button__container {
+  margin-top: 16px;
+
+  display: flex;
+
+  animation-duration: 1.5s;
+  animation-delay: 1000ms;
+  animation-fill-mode: both;
+  animation-name: fadeInBottom;
+}
+
+.hero__button {
+  cursor: pointer;
+  background-color: $primary-100;
+  color: white;
+  padding: 16px 32px;
+  font-weight: 600;
+  border-radius: 64px;
+  flex: none;
+}
+
 .hero__title {
   font-size: 2.5rem;
   font-weight: 800;
@@ -61,7 +82,6 @@
   animation-delay: 500ms;
   animation-fill-mode: both;
   animation-name: fadeInBottom;
-  
 
   @include xl {
     font-size: 1.5rem;
