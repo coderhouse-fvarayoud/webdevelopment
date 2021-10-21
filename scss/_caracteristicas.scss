@@ -38,7 +38,7 @@
       transform: scale(1.1);
 
       transition-property: transform;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
       transition-duration: 500ms;
     }
   }
@@ -47,7 +47,7 @@
 .card__title {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   padding-top: 30px;
 }
 

@@ -16,7 +16,7 @@
   flex-direction: column;
   justify-content: center;
   color: $primary-100;
-
+  padding-right: 16px;
   background-size: cover;
 }
 
@@ -68,13 +68,15 @@
   animation-name: fadeInBottom;
   margin-bottom: 16px;
 
+ 
+
   @include xl {
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
 }
 
 .hero__subtitle {
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   font-weight: 600;
   max-width: 500px;
   color: $primary-100;
@@ -84,7 +86,7 @@
   animation-name: fadeInBottom;
 
   @include xl {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 }
 

@@ -28,11 +28,12 @@
   justify-content: center;
   margin-top: 10vh;
   margin-bottom: 5vh;
-  padding-left: 50px;
-  padding-right: 50px;
+  
 
   @include xl {
     display: grid;
+    padding-left: 50px;
+  padding-right: 50px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(1, 1fr);
   }
