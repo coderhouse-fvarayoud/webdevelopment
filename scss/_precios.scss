@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-gap: 20px;
-  min-height: 50vh;
+  min-height: 30vh;
   padding-top: 15vh;
   padding-bottom: 5vh;
 
@@ -51,7 +51,12 @@
 .precios__item__icon {
   font-size: 1.5rem;
   color: green;
-  margin-right: 8px;
+  margin-right: 12px;
+}
+
+.precios__item__text {
+  font-size: 1.1rem;
+  
 }
 
 .precios__bottom {
